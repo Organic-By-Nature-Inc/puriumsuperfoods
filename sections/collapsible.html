@@ -1,0 +1,332 @@
+<style>
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+h5 {
+    margin-bottom:0;
+}
+a {
+    color:#006145;
+}
+
+.page-title {
+	text-align: center;
+	margin: 2rem;
+}
+
+.dropdown-container {
+	margin: 0.5rem auto;
+	border: 1px solid #ccc;
+	background-color: white;
+	color: #888;
+	overflow: hidden;
+}
+
+.dropdown-container {
+	background-color: white;
+}
+
+.dropdown-container header {
+	cursor: pointer;
+	font-size: 0.6rem;
+	padding: 1rem;
+	background-color: #759970;
+	color: white;
+	transition: background-color 350ms ease-in-out;
+}
+
+.dropdown-container.open header {
+	background-color: #006145;
+}
+
+.dropdown-container h5 {
+	float: left;
+	/* text-transform: uppercase; */
+	letter-spacing: 0.2em;
+}
+
+.dropdown-container .expand {
+	float: right;
+	transform: rotate(45deg);
+	font-size: 1.8em;
+	transition: transform 350ms ease-in-out;
+    margin-bottom: 0;
+}
+
+.dropdown-container.open .expand{
+	transform: rotate(0);
+}
+
+
+.dropdown-container article {
+	max-height: 0px;
+	overflow: hidden;
+	line-height: 1.6; 
+	transition: max-height 350ms ease-in-out;
+}
+
+/* padding can't be on article element because it won't collapse properly, add wrapper around contents */
+.dropdown-container .article-inner {
+	padding: 1rem;
+    text-align: left;
+}
+
+
+
+</style>
+
+<div class="dropdown-container">
+	<header class="clearfix">
+		<h5>Placing an Order</h5>
+		<figure class="expand"><i class="fa fa-close"></i></figure>
+	</header>
+	<article>
+		<div class="article-inner">
+            <p>
+                <strong>Customers -</strong> go to <a href="https://ishoppurium.com" target="_blank">ishoppurium.com</a> and login to your account. Use the <strong>“Reset Password”</strong> function to havea password link sent to you. Your email address is your user name.
+                <br><br>
+                <strong>Brand Partners -</strong> you may also place an order in your back office at <a href="https://ishoppurium.com" target="_blank">https://backoffice.mypurium.com</a> under the shop tab. If you have forgotten your user name or password, it can be emailed to you and / or reset by using the links.
+            </p>
+		</div>
+	</article>
+</div>
+
+<div class="dropdown-container">
+	<header class="clearfix">
+		<h5>Track Your Order</h5>
+		<figure class="expand"><i class="fa fa-close"></i></figure>
+	</header>
+	<article>
+		<div class="article-inner">
+			    <h4>US Orders</h4>
+                <p>Log into <a href="https://ishoppurium.com" target="_blank">ishoppurium.com</a>. The <strong>“My Account”</strong> tab displays order history. Click on the order number to display tracking #. Your tracking number will be emailed to you once your order has been shipped.</p>
+                <br>
+                <h4>FEDEX DELIVERY MANAGER APP</h4> 
+                <p>Most of Purium’s orders are sent via FedEx. <a href="https://www.fedex.com/en-us/delivery-manager.html" target="_blank">Download</a> their Delivery Manager App to use these great features:</p>
+                <ul>
+                    <li>Get tracking updates (via text message)</li>
+                    <li>Request package be held at “hold facility”</li>
+                    <li>Request a special delivery time (for a fee)</li>
+                    <li>Add delivery notes</li>
+                    <li>Set vacation time for all deliveries</li>
+                    <li>Request to hold your package for 14 days (this is the longest consecutive time period; must wait 6 days to do another hold)</li>
+                    <li>Use the FedEx “Virtual Assistant” and Customer Chat</li>
+                </ul>
+                <br>
+                <h4>Canada Orders</h4>
+                <p>The only way track orders shipped to Canada is by checking your email for updates.</p>
+		</div>
+	</article>
+</div>
+
+<div class="dropdown-container">
+	<header class="clearfix">
+		<h5>Return an Item or Order</h5>
+		<figure class="expand"><i class="fa fa-close"></i></figure>
+	</header>
+	<article>
+		<div class="article-inner">
+			<p>Clearly mark RMA and your order # on the outside of the box and return all contents of your package within 60 days to the address below. Please include any specific details inside package.
+                <br>
+                Refunds are processed only after returns are received. Funds are typically returned approximately 2-3 weeks after receipt of return package.
+                <br>
+                Returns will be accepted at will call however they WILL NOT be processed on the spot.
+            </p><br>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <h4>US Returns</h4>
+                    <p>2610 Homestead Place
+                    <br>
+                    Rancho Dominguez, CA 90220</p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <h4>Canada Returns</h4>
+                    130 - 1959 152nd Street<br>
+                    STE 512<br>
+                    Surrey, BC V4A 0C4</p>
+                </div>
+            </div>
+		</div>
+	</article>
+</div>
+
+<div class="dropdown-container">
+	<header class="clearfix">
+		<h5>Creating, Editing or Canceling Smart Orders</h5>
+		<figure class="expand"><i class="fa fa-close"></i></figure>
+	</header>
+	<article>
+		<div class="article-inner">
+			<p>Go to <a href="ishoppurium.com" target="_blank">ishoppurium.com</a> and login to your account. Click on the Smart Order tab to modify.
+            <br><br>
+            <strong>Brand Partners ( alternative option )  -</strong> Please create, edit or cancel your Smart Order at <a href="https://backoffice.mypurium.com" target="_blank">https://backoffice.mypurium.com</a> under the “Smart Order” tab.</p>
+		</div>
+	</article>
+</div>
+
+<div class="dropdown-container">
+	<header class="clearfix">
+		<h5>Enrolling or Upgrading to Brand Partner</h5>
+		<figure class="expand"><i class="fa fa-close"></i></figure>
+	</header>
+	<article>
+		<div class="article-inner">
+			<p><strong>To Enroll as a Brand Partner -</strong> If you are new to Purium (not in our system), please enroll at <a href="puriumenrollment.com" target="_blank">puriumenrollment.com</a>
+            <br><br>
+            <strong>To Upgrade from a Customer to a Brand Partner -</strong> Login at <a href="ishoppurium.com" target="_blank">ishoppurium.com</a> and chose the upgrade button.
+            <br>
+            For extra support, watch the <a href="ishoppurium.com" target="_blank">Training Video</a></p>
+		</div>
+	</article>
+</div>
+
+<div class="dropdown-container">
+	<header class="clearfix">
+		<h5>Redeem Reward Points</h5>
+		<figure class="expand"><i class="fa fa-close"></i></figure>
+	</header>
+	<article>
+		<div class="article-inner">
+			<p>This Training Guide explains how you can easily redeem your Rewards Points:
+            <br>
+            <a href="https://www.canva.com/design/DADqqYG5R5Y/view" target="_blank">https://www.canva.com/design/DADqqYG5R5Y/view</a>
+            <br>
+            <br>
+            We also have a video to explain the Rewards Points program and path:
+            <br>
+            <a href="https://vimeo.com/showcase/7281024/video/436500093" target="_blank">https://vimeo.com/showcase/7281024/video/436500093</a>
+            <br>
+            <br>
+            If there is an issue, please fill out the Web Form:
+            <br>
+            <a href="https://bit.ly/PuriumCustomerCare" target="_blank">https://bit.ly/PuriumCustomerCare</a>, choose Issue “5 -Commissions, Promos & Business Questions” and include as much info as possible in “Issue Details” for agents to resolve quickly.
+            </p>
+		</div>
+	</article>
+</div>
+
+<div class="dropdown-container">
+	<header class="clearfix">
+		<h5>Will Call Detail & Instructions (please wear a mask!)</h5>
+		<figure class="expand"><i class="fa fa-close"></i></figure>
+	</header>
+	<article>
+		<div class="article-inner">
+			<p>
+                Ready for pickup anytime Monday - Friday 8:00 am - 5:30 pm! Masks required at pickup as per Los Angeles County Health Department. 
+                <br>
+                <br>
+                <strong><i>Note:</strong> Will Call Order must be picked up within 10 days of receiving email. If not, the order will be cancelled and refunded.</i>
+                <br><br>
+                
+                <h4>Will Call Hours</h4>
+                Monday - Friday
+                <br>
+                8am - 5:30pm PT
+                <br><br>
+                 
+                <h4>Will Call Address:</h4>
+                2610 Homestead Place
+                <br>
+                Rancho Dominguez, CA 90220
+                <br>
+                Park in visitor parking, ring the doorbell near the Will Call sign & show your ID.
+                <br><br><br>
+                 
+                
+                Customer who purchased the order must show ID and be physically present to pick-up and, unless other arrangements have been previously made through customer care.
+                <br>
+                <a href="https://bit.ly/PuriumCustomerCare." target="_blank">https://bit.ly/PuriumCustomerCare.</a>
+                 
+            </p>
+		</div>
+	</article>
+</div>
+
+<div class="dropdown-container">
+	<header class="clearfix">
+		<h5>DREAMS Phone App Support</h5>
+		<figure class="expand"><i class="fa fa-close"></i></figure>
+	</header>
+	<article>
+		<div class="article-inner">
+			<p>
+                Telephone: 1 (800) 794-8158
+                <br>
+                Email: <a href="mailto:support@mysecureoffice.com">support@mysecureoffice.com</a>
+            </p>
+		</div>
+	</article>
+</div>
+
+<script>
+var headers = document.querySelectorAll('.dropdown-container header');
+
+for(var i = 0; i < headers.length; i++) {
+	headers[i].addEventListener('click', openCurrAccordion);
+}
+
+//Use this as the callback if you would like multiple dropdowns to be open
+function openAccordion(e) {
+	var parent = this.parentElement;
+	var article = this.nextElementSibling;
+	
+	if (!parent.classList.contains('open')) {
+		parent.classList.add('open');
+		article.style.maxHeight = article.scrollHeight + 'px';
+	}
+	else {
+		parent.classList.remove('open');
+		article.style.maxHeight = '0px';
+	}
+}
+
+//Use this as the callback if you would like no more than one dropdown to be open
+function openCurrAccordion(e) {
+	for(var i = 0; i < headers.length; i++) {
+		var parent = headers[i].parentElement;
+		var article = headers[i].nextElementSibling;
+
+		if (this === headers[i] && !parent.classList.contains('open')) {
+			parent.classList.add('open');
+			article.style.maxHeight = article.scrollHeight + 'px';
+		}
+		else {
+			parent.classList.remove('open');
+			article.style.maxHeight = '0px';
+		}
+	}
+}
+
+//Notes:
+/* Adding the 'open' class to the dropdown allows us to create
+ * easier stylings for the different components of the dropdown.
+ * It basically acts as a way to style based on the state (open/closed).
+ * The maxHeight style transition is the base functionality.
+ *
+ * Change the callback in line 4 to either openCurrAccordion or openAccordion
+ * to see the two different behaviors commented above each function
+ */
+
+
+//More Advanced Notes:
+/* If you had a nav menu with defined heights you could use the checkbox trick
+ * common with mobile nav menus. However, height cannot be transitioned so we 
+ * use max-height. In addition, transitioning max-height to a percentage doesn't 
+ * function properly, we need to use javascript to find the height and set it as 
+ * a pixel value. If you have a pre-determined height for your dropdowns, you 
+ * could implement a version without javascript. Javascript does allow us a 
+ * little more flexibility in this instance. 
+ */
+</script>
